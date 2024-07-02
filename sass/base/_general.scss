@@ -16,12 +16,15 @@ header {
   margin: 0 auto;
 }
 
-.buttons-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  padding-top: 32px;
+h1 {
+  font-weight: $fw-500;
 }
+
+.main-container {
+  max-width: 800px;
+}
+
+// HEADER
 
 .hero-content {
   display: flex;
@@ -37,20 +40,82 @@ header {
   position: relative;
 }
 
-h1 {
-  font-weight: $fw-500;
-}
-
 .logo {
   width: 175px;
 }
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 32px;
+}
+
+// NAVIGATION
 
 .navigation-container {
   display: flex;
   padding: 2.5rem 2.5rem 0 2.5rem;
   display: flex;
   justify-content: space-between;
+  
 }
+
+.nav-primary {
+  // display: none;
+  position: absolute;
+  background-color: rgba(36, 42, 69, 0.9);
+  height: 100vh;
+  width: 100%;
+  z-index: 20;
+  
+  
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    
+  }
+
+  &__list-item {
+    // margin-bottom: 1rem;
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 17px;
+    letter-spacing: 2.30769px;
+    
+    
+
+
+    &:after {
+      height: 1px;
+      display: block;
+      width: 75%; /* Adjust this percentage to make the line less wide */
+      background: #e7e7e7;
+      border-right: 1px white;
+      margin: 37px auto 0 auto; /* Centers the line */
+      content: '';
+  }
+    
+    
+  }
+
+  &__list-link {
+    color: white;
+    text-decoration: none;
+}
+
+}
+
+.nav-inner {
+  position: absolute;
+  width: 100%;
+text-align: center;
+top: 25%;
+}
+
 
 .hamburger-menu {
   background-color: transparent;
@@ -62,10 +127,6 @@ h1 {
   height: 30px;
   background-position: center center;
   z-index: 20;
-}
-
-.main-container {
-  max-width: 800px;
 }
 
 .shape {
