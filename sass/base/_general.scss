@@ -7,3 +7,58 @@ body {
   color: clr(primary, 300);
   line-height: 1.5;
 }
+
+header {
+  padding-top: 80px;
+  width: 350px;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  
+}
+
+.buttons-container {
+  padding-top: 32px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-paragraph {
+  color: clr(primary, 100);
+}
+
+h1 {
+  font-weight: $fw-500;
+}
+
+.logo {
+  width: 175px;
+}
+
+.navigation-container {
+  display: flex;
+  padding: 2.5rem 2.5rem 0 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.hamburger-menu {
+  background-color: transparent;
+  background-image: url(/images/icon-hamburger.svg);
+  background-repeat: no-repeat;
+  border: 0;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-position: center center;
+  z-index: 20;
+}
+
+.main-container {
+  max-width: 800px;
+}
