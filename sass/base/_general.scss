@@ -14,10 +14,12 @@ header {
   height: auto;
   text-align: center;
   margin: 0 auto;
-  
 }
 
 .buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
   padding-top: 32px;
 }
 
@@ -29,6 +31,10 @@ header {
 
 .hero-paragraph {
   color: clr(primary, 100);
+}
+
+.hero-image {
+  position: relative;
 }
 
 h1 {
@@ -44,7 +50,6 @@ h1 {
   padding: 2.5rem 2.5rem 0 2.5rem;
   display: flex;
   justify-content: space-between;
-  
 }
 
 .hamburger-menu {
@@ -61,4 +66,15 @@ h1 {
 
 .main-container {
   max-width: 800px;
+}
+
+.shape {
+  position: absolute;
+  top: 35px;
+  z-index: -1;
+  background-color: clr(primary, 200);
+  width: 110%;
+  height: 200px;
+  left: 80px;
+  border-radius: 65px;
 }
