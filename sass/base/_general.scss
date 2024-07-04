@@ -21,7 +21,7 @@ h1 {
 }
 
 .main-container {
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 // HEADER
@@ -53,19 +53,22 @@ h1 {
 
 // NAVIGATION
 
-.navigation-container {
-  display: flex;
-  padding: 2.5rem 2.5rem 0 2.5rem;
+.navigation-bar {
   display: flex;
   justify-content: space-between;
+  padding: 2rem;
   
 }
 
+.nav.show {
+  display: block;
+}
+
 .nav {
+  display: none;
   position: absolute;
   height: 100%;
   width: 100%;
-  display: flex;
   flex-direction: column;
   background-color: rgba(36, 42, 69, 0.97);
   z-index: 10;
@@ -76,7 +79,6 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 45px;
-    align-self: center;
     text-align: center;
     margin-top: 15rem;
     
@@ -121,6 +123,10 @@ h1 {
   height: 30px;
   background-position: center center;
   z-index: 20;
+}
+
+.hamburger-menu.active {
+  background-image: url(/images/icon-close.svg);
 }
 
 .shape {
