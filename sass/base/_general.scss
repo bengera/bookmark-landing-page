@@ -20,8 +20,30 @@ h1 {
   font-weight: $fw-500;
 }
 
+.overlay {
+  position: fixed;
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.overlay.show {
+  // opacity: 0.6;
+  z-index: 1;
+  background-color: rgba(36, 42, 69, 0.97);
+}
+
 .main-container {
-  max-width: 1000px;
+  // max-width: 1000px;
+}
+
+.inner-content{
+  // border: 2px solid black;
+max-width: 65rem;
+margin: 0 auto;
 }
 
 // HEADER
@@ -70,7 +92,7 @@ h1 {
   height: 100%;
   width: 100%;
   flex-direction: column;
-  background-color: rgba(36, 42, 69, 0.97);
+  // background-color: rgba(36, 42, 69, 0.97);
   z-index: 10;
 
   &__inner-content {
