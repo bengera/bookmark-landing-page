@@ -1,12 +1,12 @@
 const hamMenu = document.querySelector('.hamburger-menu');
-const navUL = document.querySelector('.nav');
+const navDropDown = document.querySelector('.nav__drop-down');
 const logo = document.querySelector('.logo');
 const overlay = document.querySelector('.overlay');
 
 hamMenu.addEventListener('click',() => {
     console.log('toggle-menu');
     hamMenu.classList.toggle('active');
-    navUL.classList.toggle('show');
+    navDropDown.classList.toggle('show');
     overlay.classList.toggle('show');
     if (hamMenu.classList.contains('active')) {
         logo.src = 'images/logo-bookmark-white.svg';
