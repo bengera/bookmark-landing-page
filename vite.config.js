@@ -8,6 +8,7 @@ export default defineConfig({
     htmlPurge(),
   ],
   build: {
+    assetsInlineLimit: 0, // Disable inline asset embedding for all asset types
     rollupOptions: {
       input: {
         index: resolve(__dirname, 'index.html'),
