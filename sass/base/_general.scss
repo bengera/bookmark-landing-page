@@ -61,6 +61,17 @@ h1 {
 
 .logo {
   width: 175px;
+  height: 25px;
+  margin-top: 3px;
+  // border:1px solid black;
+  background-image: url("/images/logo-bookmark.svg");
+  background-repeat: no-repeat;
+  // background-size: 150px 25px;
+}
+
+.logo.white {
+  background-image: url("/images/logo-bookmark-white.svg");
+  z-index: 40;
 }
 
 .buttons-container {
@@ -69,6 +80,8 @@ h1 {
   gap: 1rem;
   padding-top: 32px;
 }
+
+
 
 // NAVIGATION
 

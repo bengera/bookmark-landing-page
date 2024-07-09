@@ -8,13 +8,14 @@ hamMenu.addEventListener('click',() => {
     hamMenu.classList.toggle('active');
     navDropDown.classList.toggle('show');
     overlay.classList.toggle('show');
-    if (hamMenu.classList.contains('active')) {
-        logo.src = 'images/logo-bookmark-white.svg';
-        logo.style.zIndex = '40';
-    } else {
-        logo.src = 'images/logo-bookmark.svg';
-        logo.style.zIndex = '0';
-    }
+    logo.classList.toggle('white');
+    // if (hamMenu.classList.contains('active')) {
+    //     logo.src = 'images/logo-bookmark-white.svg';
+    //     logo.style.zIndex = '40';
+    // } else {
+    //     logo.src = 'images/logo-bookmark.svg';
+    //     logo.style.zIndex = '0';
+    // }
     
     
 });
