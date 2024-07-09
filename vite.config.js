@@ -3,6 +3,7 @@ import htmlPurge from 'vite-plugin-purgecss';
 import { resolve } from 'path';
 
 export default defineConfig({
+  base: '',
   plugins: [
     htmlPurge(),
   ],
