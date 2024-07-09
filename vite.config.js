@@ -9,7 +9,6 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        // Define your entry points here
         index: resolve(__dirname, 'index.html'),
         mainJS: resolve(__dirname, 'js/main.js'),
       
