@@ -10,11 +10,10 @@
   },
   "devDependencies": {
     "sass": "^1.69.5",
-    "vite": "^5.0.13",
+    "vite": "^5.3.3",
     "vite-plugin-purgecss": "^0.2.12"
   },
   "dependencies": {
     "postcss-preset-env": "^9.3.0"
   }
-  
 }
