@@ -60,10 +60,9 @@ main {
 .features {
   display: flex;
   flex-direction: column;
-  gap: 23px;;
+  gap: 23px;
 
   &__heading {
-   
     text-align: center;
   }
 
@@ -73,55 +72,47 @@ main {
   }
 
   &__list {
-    list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: 25px;
-    text-align: center;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: 0;
+    box-shadow: 0px;
+    cursor: pointer;
+    color: clr(primary, 300);
+
+    border-bottom: 2px solid rgba($color: #cfcccc, $alpha: 0.5);
+    padding-bottom: 25px;
+  }
+
+  &__button {
     position: relative;
   }
 
-  &__list-item {
-    // margin-bottom: 1rem;
-    line-height: 17px;
-    cursor: pointer;
+  &__button.active {
+    // border-bottom: 2px solid $color-red;
+    // border-width: thick;
 
-    &:after {
-      height: 1px;
-      display: block;
-      width: 310px;
-      background: rgba($color: #cfcccc, $alpha: 0.5);
-      margin: 26px auto 0 auto;
+    &::after {
       content: "";
+      display: block;
+      height: 5px;
+      background-color: $color-red;
+      position: absolute;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      transform: translateX(50%);
     }
   }
 
-  &__list-link {
-    text-decoration: none;
-    color: clr(primary, 300);
+  button.features__button:nth-child(1) {
+    border-top: 2px solid rgba($color: #cfcccc, $alpha: 0.5);
+    padding-top: 25px;
   }
-
-  &__list-link.active{
-    border-bottom: 2px solid $color-red;
-    padding-bottom: 20px;
-    border-width: thick;
-  }
-
- 
- 
-}
-
-
-
-.features__list-item:not(:first-child)::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -25px;
-  width: 310px;
-  border-top: 1px solid #cfcccc;
 }
 
 .left-content {
@@ -130,7 +121,6 @@ main {
 
   &__img-container {
     position: relative;
-
   }
 }
 
@@ -140,10 +130,10 @@ main {
   &__heading {
     padding-bottom: 0.5rem;
   }
-  
+
   &__para {
-  color: clr(primary, 100);
-  margin-bottom: 15px;
+    color: clr(primary, 100);
+    margin-bottom: 15px;
   }
 }
 

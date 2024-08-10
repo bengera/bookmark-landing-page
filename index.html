@@ -54,24 +54,28 @@
    <section class="section features">
     <h2 class="features__heading">Features</h2>
    <p class="features__para text-center">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
-  <ul class="features__list">
+    <div class="features__list">
+      <button class="features__button active">Simple Bookmarking</button>
+      <button class="features__button">Speedy Searching</button>
+      <button class="features__button">Easy Sharing</button>
+    </div>
+   <!-- <ul class="features__list">
     <li class="features__list-item "><a href="#" class="features__list-link active">Simple Bookmarking</a></li>
     <li class="features__list-item"><a href="#" class="features__list-link">Speedy Searching</a></li>
     <li class="features__list-item"><a href="#" class="features__list-link">Easy Sharing</a></li>
-  </ul> 
-
+  </ul>  -->
 
   <div class="left-content">
     <div class="left-content__img-container">
-    <img src="./images/illustration-features-tab-1.svg" alt="website">
+    <img id="features-img" src="./images/illustration-features-tab-1.svg" alt="website">
     <div class="shape features-shape"></div>
   </div>
   </div>
 
   <div class="right-content">
-    <h2 class="right-content__heading">Bookmark in one click</h2>
-    <p class="right-content__para">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-    <button class="button" data-type="primary">More info</button>
+    <h2 id="features-heading" class="right-content__heading">Bookmark in one click</h2>
+    <p id="features-text" class="right-content__para">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+    <button id="features-button" class="button" data-type="primary">More info</button>
   </div>
 
   </section>
