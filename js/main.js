@@ -20,6 +20,7 @@ const image = document.getElementById('features-img');
 const heading = document.getElementById('features-heading');
 const text = document.getElementById('features-text');
 const button = document.getElementById('features-button');
+const shape = document.getElementById('shape');
 
 // Add event listener to each link
 tabs.forEach((tab) => {
@@ -36,20 +37,23 @@ tabs.forEach((tab) => {
                 heading.innerText = "Bookmark in one click";
                 text.innerText = 'Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.'
                 image.src = "./images/illustration-features-tab-1.svg"
-                
+                shape.style.height = "200px";
+                                
                 break;
 
                 case "Speedy Searching":
                     heading.innerText = "Intelligent search";
                     text.innerText = 'Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.'
                     image.src = "./images/illustration-features-tab-2.svg"
-                    
+                    shape.style.height = "240px";
+                                        
                     break;
 
                     case "Easy Sharing":
                         heading.innerText = "Share your bookmarks";
                         text.innerText = 'Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.'
                         image.src = "./images/illustration-features-tab-3.svg"
+                        shape.style.height = "250px";
                         
                         break;    
 
