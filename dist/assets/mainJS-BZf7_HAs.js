@@ -1,1 +1,0 @@
-const e=document.querySelector(".hamburger-menu"),o=document.querySelector(".nav__drop-down"),t=document.querySelector(".logo"),c=document.querySelector(".overlay");e.addEventListener("click",()=>{console.log("toggle-menu"),e.classList.toggle("active"),o.classList.toggle("show"),c.classList.toggle("show"),t.classList.toggle("white")});
