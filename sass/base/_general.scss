@@ -93,8 +93,7 @@ main {
   }
 
   &__button.active {
-    // border-bottom: 2px solid $color-red;
-    // border-width: thick;
+   
 
     &::after {
       content: "";
