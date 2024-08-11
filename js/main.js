@@ -22,6 +22,8 @@ const text = document.getElementById('features-text');
 const button = document.getElementById('features-button');
 const shape = document.getElementById('shape');
 
+import tab2 from '../images/illustration-features-tab-2.svg';
+import tab3 from '../images/illustration-features-tab-3.svg';
 // Add event listener to each link
 tabs.forEach((tab) => {
     tab.addEventListener('click',(e) =>{
