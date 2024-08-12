@@ -16,9 +16,7 @@ body {
 }
 
 header {
-  padding-top: 80px;
-  // padding: 1rem;
-  // max-width: 350px;
+  padding-top: 20px;
   height: auto;
   text-align: center;
   margin: 0 auto;
@@ -48,97 +46,11 @@ main {
 }
 
 .overlay.show {
-  // opacity: 0.6;
+ 
   z-index: 1;
   background-color: rgba(36, 42, 69, 0.97);
 
-  // border: 2px solid red;
+  
 }
 
 // FEATURES
-
-.features {
-  display: flex;
-  flex-direction: column;
-  gap: 23px;
-
-  &__heading {
-    text-align: center;
-  }
-
-  &__para {
-    color: clr(primary, 100);
-    margin-bottom: 40px;
-  }
-
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-  }
-
-  &__button {
-    background-color: transparent;
-    border: 0;
-    box-shadow: 0px;
-    cursor: pointer;
-    color: clr(primary, 300);
-
-    border-bottom: 2px solid rgba($color: #cfcccc, $alpha: 0.5);
-    padding-bottom: 25px;
-  }
-
-  &__button {
-    position: relative;
-  }
-
-  &__button.active {
-   
-
-    &::after {
-      content: "";
-      display: block;
-      height: 5px;
-      background-color: $color-red;
-      position: absolute;
-      width: 50%;
-      left: 0;
-      bottom: 0;
-      transform: translateX(50%);
-    }
-  }
-
-  button.features__button:nth-child(1) {
-    border-top: 2px solid rgba($color: #cfcccc, $alpha: 0.5);
-    padding-top: 25px;
-  }
-}
-
-.left-content {
-  margin-top: 72px;
-  margin-bottom: 32px;
-
-  &__img-container {
-    position: relative;
-  }
-}
-
-.right-content {
-  text-align: center;
-
-  &__heading {
-    padding-bottom: 0.6rem;
-    margin-top: 2rem;
-  }
-
-  &__para {
-    color: clr(primary, 100);
-    margin-bottom: 20px;
-  }
-}
-
-.shape.features-shape {
-  // background-color: red;
-  top: 30%;
-  left: -106px;
-}
