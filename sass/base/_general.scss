@@ -1,5 +1,8 @@
 @use "../abstracts/" as *;
 
+$bp-tablet : 37.5em; //600
+$bp-desktop : 62.5em; //1000
+
 html,
 body {
   margin: 0;
@@ -53,12 +56,13 @@ main {
   
 }
 
-// DOWNLOADS
+// FAQ 
 
-.downloads {
+.faq {
   display: flex;
     flex-direction: column;
     gap: 17px;
+    
 
   &__heading {
       text-align: center;
@@ -70,33 +74,101 @@ main {
   }
 }
 
-.card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  // gap: 5px;
+// Accordion
+.accordion {
+  width: 90%;
+  margin: 2rem auto;
 
-  &__title {
-    color: clr(primary, 300);
-    font-size: 20px;
-    font-weight: $fw-500;
+  @media only screen and (min-width: $bp-desktop) {
+      width: 60%;  
+  }
+  
+  &__item {
+    background-color: #fff;
+    color: green;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
   }
 
-  &__version {
-    color: clr(primary, 100);
-    font-size: 15px;
-  }
+  &__item-header {
+    padding: 2rem;
+    min-height: 70px;
+    width: 340px;
+    margin: 0 auto;
+    // font-family: $font-mono;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    background-color: greenyellow;
 
-  &__img {
-    height: 100px;
-    width: 100px;
-    margin-bottom: 32px;
-  }
+    @media only screen and (min-width: $bp-tablet) {
+      width: auto;  
+      font-size: 48px;
+    }
 
-  &__button {
-    margin-top: 60px;
-    width: 230px;
     
-    
+
+    &:hover {
+
+      @media only screen and (min-width: $bp-desktop) {
+        background-color: yellow;
+          
+      }
+      
+    }
+
   }
+
+  &__item-header::after {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 14px;
+    right: 1rem;
+    transition: transform 0.2s ease-in-out;
+    background: url(/images/icon-arrow.svg) no-repeat;
+
+  }
+
+  &__item-header.active::after {
+    
+    transform: rotate(180deg);
+  }
+
+  &__item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: red;
+    width: 340px;
+    margin: 0 auto;
+
+    @media only screen and (min-width: $bp-tablet) {
+      width: auto;   
+    }
+  }
+
+  &__item-body-content {
+    line-height: 1.5rem;
+    padding: 0 2rem 2rem 2rem;
+
+
+
+  }
+
+
+  &__h3-title {
+    max-width: 260px;
+    font-size: 18px;
+
+    @media only screen and (min-width: $bp-tablet) {
+        max-width: inherit;
+        font-size: 24px;
+    }
+
+  }
+
+
+
 }
