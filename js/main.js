@@ -19,7 +19,7 @@ const tabs = document.querySelectorAll('.features__button');
 const image = document.getElementById('features-img');
 const heading = document.getElementById('features-heading');
 const text = document.getElementById('features-text');
-const button = document.getElementById('features-button');
+// const button = document.getElementById('features-button');
 const shape = document.getElementById('shape');
 
 import tab1 from '../images/illustration-features-tab-1.svg';
