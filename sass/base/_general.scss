@@ -72,6 +72,11 @@ main {
     color: clr(primary, 100);
     margin-bottom: 20px;
   }
+
+  &__button {
+    width: 114px;
+margin: 0 auto;
+  }
 }
 
 // Accordion
@@ -85,38 +90,29 @@ main {
   
   &__item {
     background-color: #fff;
-    color: green;
-    margin: 1rem 0;
+    color: clr(primary, 300);
+    margin: 1rem 0 0 0;
     border-radius: 0.5rem;
   }
 
   &__item-header {
-    padding: 2rem;
+    
     min-height: 70px;
     width: 340px;
     margin: 0 auto;
-    // font-family: $font-mono;
     display: flex;
     align-items: center;
     position: relative;
     cursor: pointer;
-    background-color: greenyellow;
 
+    border-bottom: 2px solid rgba(207, 204, 204, 0.5);
+   
     @media only screen and (min-width: $bp-tablet) {
       width: auto;  
       font-size: 48px;
     }
 
-    
-
-    &:hover {
-
-      @media only screen and (min-width: $bp-desktop) {
-        background-color: yellow;
-          
-      }
-      
-    }
+       
 
   }
 
@@ -132,7 +128,7 @@ main {
   }
 
   &__item-header.active::after {
-    
+    filter: invert(32%) sepia(96%) saturate(7490%) hue-rotate(348deg) brightness(98%) contrast(128%);
     transform: rotate(180deg);
   }
 
@@ -140,7 +136,6 @@ main {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: red;
     width: 340px;
     margin: 0 auto;
 
@@ -151,10 +146,15 @@ main {
 
   &__item-body-content {
     line-height: 1.5rem;
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 0.5rem 0 0;
 
 
 
+  }
+
+  &__description {
+    color: clr(primary, 100);
+    padding-top: 26px;
   }
 
 
