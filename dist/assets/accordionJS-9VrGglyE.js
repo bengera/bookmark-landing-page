@@ -1,0 +1,1 @@
+const s=document.querySelectorAll(".accordion__item-header");s.forEach(e=>{e.addEventListener("click",i=>{e.classList.toggle("active");const t=e.nextElementSibling;e.classList.contains("active")?t.style.maxHeight=t.scrollHeight+"px":t.style.maxHeight=0})});
