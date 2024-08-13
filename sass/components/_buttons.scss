@@ -8,6 +8,7 @@
   border: 0;
   font-size: 14px;
   font-weight: $fw-500;
+  letter-spacing: 0.25px;
   padding: 1.125em 1.4em;
   transition: 275ms ease;
   border-radius: 5px;
@@ -17,11 +18,33 @@
   &[data-type="primary"] {
     background-color: clr(primary, 200);
     color: #FFF;
+    border: 2px solid clr(primary, 200);
+
+    &:hover {
+      color: clr(primary, 200);
+      background-color: #FFF;
+      box-shadow: 0 0 0 0;
+      
+      
+    }
   }
 
   &[data-type="accent"] {
     background-color: #F7F7F7;
     color: clr(primary, 100);
+  }
+
+  &[data-type="red"] {
+    box-shadow: 0 0 0 0;
+    background-color: $color-red;
+    color: #FFF;
+    border: 2px solid $color-red;
+
+    &:hover {
+      color: $color-red;
+      background-color: #FFF;
+      
+    }
   }
 
 //   &[data-type="outline"] {
