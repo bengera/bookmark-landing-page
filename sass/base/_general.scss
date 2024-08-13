@@ -1,8 +1,5 @@
 @use "../abstracts/" as *;
 
-$bp-tablet : 37.5em; //600
-$bp-desktop : 62.5em; //1000
-
 html,
 body {
   margin: 0;
@@ -56,120 +53,50 @@ main {
   
 }
 
-// FAQ 
+// Contact
 
-.faq {
-  display: flex;
-    flex-direction: column;
-    gap: 17px;
-    
+.contact {
+  background-color: clr(primary, 200);;
+  color: #FFF;
 
-  &__heading {
-      text-align: center;
-    }  
-
-  &__para {
-    color: clr(primary, 100);
-    margin-bottom: 20px;
-  }
-
-  &__button {
-    width: 114px;
-margin: 0 auto;
-  }
-}
-
-// Accordion
-.accordion {
-  // width: 90%;
-  margin: 0.3rem auto;
-
-  @media only screen and (min-width: $bp-desktop) {
-      width: 60%;  
-  }
-  
-  &__item {
-    background-color: #fff;
-    color: clr(primary, 300);
-    margin: 1rem 0 0 0;
-    border-radius: 0.5rem;
-  }
-
-  &__item-header {
-    
-    min-height: 70px;
-    width: 340px;
-    margin: 0 auto;
+  &__inner-content {
     display: flex;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-
-    border-bottom: 2px solid rgba(207, 204, 204, 0.5);
-   
-    @media only screen and (min-width: $bp-tablet) {
-      width: auto;  
-      font-size: 48px;
-    }
-
-       
-
+    flex-direction: column;
   }
 
-  &__item-header::after {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 14px;
-    right: 1rem;
-    transition: transform 0.2s ease-in-out;
-    background: url(/images/icon-arrow.svg) no-repeat;
-
+  &__top-text {
+    font-size: 13px;
+    letter-spacing: 5px;
   }
 
-  &__item-header.active::after {
-    filter: invert(32%) sepia(96%) saturate(7490%) hue-rotate(348deg) brightness(98%) contrast(128%);
-    transform: rotate(180deg);
+  &__cta-text {
+    font-size: 32px;
   }
 
-  &__item-body {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    width: 340px;
-    margin: 0 auto;
-
-    @media only screen and (min-width: $bp-tablet) {
-      width: auto;   
-    }
-  }
-
-  &__item-body-content {
-    line-height: 1.5rem;
-    padding: 0 0.5rem 0 0;
-
-
-
-  }
-
-  &__description {
-    color: clr(primary, 100);
-    padding-top: 26px;
-    // font-size: 16px;
-  }
-
-
-  &__h3-title {
-    max-width: 275px;
-    // font-size: 16px;
-
-    @media only screen and (min-width: $bp-tablet) {
-        max-width: inherit;
-        font-size: 24px;
-    }
-
-  }
-
-
-
+  
 }
+
+.contact-btn {
+  width: 126px;
+}
+
+// Input Field
+
+
+.form-control {
+  display: flex;
+  position: relative;
+  
+}
+
+input {
+  width: 300px;
+  font-size: 16px;
+  padding: 12px 14px;
+  border: 0;
+  color: #979797;
+  background-color: #fff;
+  line-height: 40px;
+  border-radius: 5px;
+}
+
