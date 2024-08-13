@@ -13,7 +13,7 @@ export default defineConfig({
       input: {
         index: resolve(__dirname, 'index.html'),
         mainJS: resolve(__dirname, 'js/main.js'),
-      
+        accordionJS: resolve(__dirname, 'js/accordion.js'),
       }
     }
   }
