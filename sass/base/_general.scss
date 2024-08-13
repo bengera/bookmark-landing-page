@@ -81,8 +81,8 @@ margin: 0 auto;
 
 // Accordion
 .accordion {
-  width: 90%;
-  margin: 2rem auto;
+  // width: 90%;
+  margin: 0.3rem auto;
 
   @media only screen and (min-width: $bp-desktop) {
       width: 60%;  
@@ -155,12 +155,13 @@ margin: 0 auto;
   &__description {
     color: clr(primary, 100);
     padding-top: 26px;
+    font-size: 16px;
   }
 
 
   &__h3-title {
-    max-width: 260px;
-    font-size: 18px;
+    max-width: 275px;
+    font-size: 16px;
 
     @media only screen and (min-width: $bp-tablet) {
         max-width: inherit;
