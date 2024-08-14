@@ -67,4 +67,11 @@ tabs.forEach((tab) => {
     })
 })
 
-// If target is equal to particular text - fill content
+// CHECK EMAIL FIELD
+
+const form = document.getElementById('form');
+
+form.addEventListener('click', (e)=> {
+    e.preventDefault();
+    console.log('check input');
+})
