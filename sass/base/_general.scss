@@ -68,6 +68,7 @@ main {
   &__top-text {
     font-size: 13px;
     letter-spacing: 5px;
+    font-weight: $fw-500;
   }
 
   &__cta-text {
@@ -104,7 +105,7 @@ main {
   padding: 8px 15px;
   font-size: 85%;
   border: 0;
-  color: #979797;
+  color: clr(primary, 300);
   background-color: #fff;
   line-height: 40px;
   border-radius: 5px;

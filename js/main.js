@@ -86,13 +86,16 @@ form.addEventListener('click', (e) => {
 function checkEmail() {
     const email = document.getElementById('email');
     const emailValue = email.value.trim();
-
     if (emailValue === '') {
         setErrorFor(email, 'Whoops, make sure it’s an email');
     } else if  (!isEmail(emailValue)) 
         setErrorFor(email, 'Whoops, make sure it’s an email');
      else  {
-
+     emailField.value = '';
+     emailField.classList.remove('active');
+     iconError.classList.remove('active');
+     errorDropdown.classList.remove('active');
+     buttonContact.classList.remove('active');
     }
 
 }
