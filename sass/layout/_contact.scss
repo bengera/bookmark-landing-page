@@ -1,0 +1,103 @@
+@use "../abstracts/" as *;
+
+.contact {
+    background-color: clr(primary, 200);
+    color: #fff;
+    padding: 5rem 2rem;
+  
+    &__inner-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      text-align: center;
+    }
+  
+    &__top-text {
+      font-size: 13px;
+      letter-spacing: 5px;
+      font-weight: $fw-500;
+    }
+  
+    &__cta-text {
+      font-size: 32px;
+    }
+  }
+  
+  .contact-btn {
+    width: 100%;
+    // display: none;
+  }
+  
+  .contact-btn.active {
+    margin-top: 1.2rem;
+  }
+  
+  // Input Field
+  
+  .input-container {
+    position: relative;
+  }
+  
+  .form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+  }
+  
+  .email-field {
+    position: relative;
+    width: 85vw;
+    padding: 8px 15px;
+    font-size: 85%;
+    border: 0;
+    color: clr(primary, 300);
+    background-color: #fff;
+    line-height: 40px;
+    border-radius: 5px;
+    z-index: 100;
+  }
+  
+  .email-field.active {
+    
+    border: 3px solid $color-red;
+  }
+  
+  .i-error {
+    display: none;
+  }
+  
+  .i-error.active {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 200;
+    
+  }
+  
+  .error-dropdown{
+    display: none;
+  }
+  
+  .error-dropdown.active {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    background-color: $color-red;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    bottom: -25px;
+    width: 100%;
+    text-align: left;
+    
+    &__message {
+      font-size: 12px;
+      font-weight: 500;
+      font-style: italic;
+      
+    }
+  }
+  
