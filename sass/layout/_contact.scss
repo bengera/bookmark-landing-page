@@ -11,7 +11,7 @@
       align-items: center;
       gap: 1rem;
       text-align: center;
-      //test
+      
     }
   
     &__top-text {
@@ -56,6 +56,7 @@
     border: 0;
     color: clr(primary, 300);
     background-color: #fff;
+    border: 2px solid #FFF;
     line-height: 40px;
     border-radius: 5px;
     z-index: 100;
