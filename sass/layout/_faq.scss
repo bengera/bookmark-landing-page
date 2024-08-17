@@ -51,7 +51,7 @@
      
       @media only screen and (min-width: $bp-tablet) {
         width: auto;  
-        font-size: 48px;
+        font-size: 18px;
       }
   
          
@@ -97,7 +97,10 @@
     &__description {
       color: clr(primary, 100);
       padding-top: 26px;
-      // font-size: 16px;
+      @media only screen and (min-width: $bp-tablet) {
+        max-width: inherit;
+        font-size: 16px;
+    }
     }
   
   
@@ -107,7 +110,7 @@
   
       @media only screen and (min-width: $bp-tablet) {
           max-width: inherit;
-          font-size: 24px;
+          font-size: 18px;
       }
   
     }
