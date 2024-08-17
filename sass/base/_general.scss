@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  padding-top: 20px;
+  padding-top: 45px;
   height: auto;
   text-align: center;
   margin: 0 auto;
@@ -24,7 +24,7 @@ header {
 
   @include mq(medium) {
    display: grid;
-   grid-template-columns: 720px 1fr;
+   grid-template-columns: 520px 1fr;
    grid-template-rows: 1fr; 
   }
 }
@@ -54,7 +54,7 @@ main {
 }
 
 .master-container {
-  max-width: 82rem;
+  max-width: 71.25rem;
   margin: 0 auto;
 }
 
@@ -75,10 +75,10 @@ main {
 
 
 //temp
-.master-container {
-  border: 2px solid black;
-}
+// .master-container {
+//   border: 2px solid black;
+// }
 
-header {
-  border: 2px solid red;
-  }
+// header {
+//   border: 2px solid red;
+//   }

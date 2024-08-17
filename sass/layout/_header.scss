@@ -21,7 +21,12 @@
   color: clr(primary, 100);
   @include mq(medium) {
     text-align: left;
+    
   }
+
+  @include mq(large) {
+    max-width: 531px;
+      }
 }
 
 .hero-image {
@@ -76,13 +81,13 @@
   border-radius: 65px;
 
   @include mq(small) {
-    width: 100%;
+    width: 100vw;
     height: 272px;
     left: -54px;
   }
 
   @include mq(large) {
-    width: 100vw;
+    
     height: 355px;
     left: 150px;
     border-radius: 178px;
