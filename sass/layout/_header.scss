@@ -14,6 +14,7 @@
     align-items: flex-start;
     align-self: center;
     width: 676px;
+    gap: 5px;
   }
 }
 
@@ -21,12 +22,11 @@
   color: clr(primary, 100);
   @include mq(medium) {
     text-align: left;
-    
   }
 
   @include mq(large) {
     max-width: 531px;
-      }
+  }
 }
 
 .hero-image {
@@ -37,6 +37,14 @@
     align-self: center;
     justify-self: start;
   }
+}
+
+.hero-img {
+
+  @include mq(large) {
+    width: 108%;
+      }
+
 }
 
 .logo {
@@ -87,10 +95,9 @@
   }
 
   @include mq(large) {
-    
-    height: 355px;
-    left: 150px;
+    height: 326px;
+    left: 173px;
+    top: 121px;
     border-radius: 178px;
-    top: 58px;
   }
 }
