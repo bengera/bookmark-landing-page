@@ -6,6 +6,11 @@
     gap: 16px;
     max-width: 350px;
     margin: 0 auto;
+
+    @include mq(medium) {
+      grid-column: 1/1;
+      grid-row: 1/1;
+    }
   }
   
   .hero-paragraph {
@@ -14,7 +19,14 @@
   
   .hero-image {
     position: relative;
+
+    @include mq(medium) {
+      grid-column: 2/2;
+  align-self: center;
+    }
   }
+
+
   
   .logo {
     width: 175px;
@@ -36,4 +48,16 @@
     justify-content: center;
     gap: 1rem;
     padding-top: 32px;
+  }
+
+  .button[data-type=accent] {
+    
+    border: 2px solid #F7F7F7;
+  }
+
+  .button[data-type=accent]:hover {
+    color: clr(primary,300);
+    background-color: #FFF;
+    box-shadow: 0 0 0 0;
+    border: 2px solid clr(primary,300);
   }
