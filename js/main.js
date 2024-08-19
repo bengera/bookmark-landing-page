@@ -9,6 +9,8 @@ hamMenu.addEventListener('click',() => {
     navDropDown.classList.toggle('show');
     overlay.classList.toggle('show');
     logo.classList.toggle('white');
+
+    
   
     
     
@@ -114,3 +116,25 @@ function isEmail(email) {
 }
 
 
+// RESIZING FOR MENU
+
+function resetMenu() {
+    console.log('reset menu');
+}
+
+(function () {
+    window.onresize = displayWindowSize;
+    window.onload = displayWindowSize;
+
+    function displayWindowSize() {
+        let myWidth = window.innerWidth;
+
+        if (myWidth >= 1000) {
+            if (hamMenu.classList.contains('active')) {
+                resetMenu();
+            }
+            
+        } 
+
+    }
+})();

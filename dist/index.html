@@ -1,21 +1,23 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Bookmark-landing-page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <script src="./js/accordion.js" defer></script>
-    <script type="module" crossorigin src="/assets/index-DC-pudSa.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/mainJS-BCVGKKUh.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-BHfJaVmf.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/assets/index-DOBtTIK0.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/accordionJS-9VrGglyE.js">
+    <link rel="modulepreload" crossorigin href="/assets/mainJS-CCdb-CAl.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-CfhOrtSG.css">
   </head>
   <body>
+   
     <div class="overlay"></div>
+    <div class="master-container">
     <div class="nav">
      <div class="logo"></div>
      <button class="hamburger-menu"></button>
@@ -39,7 +41,7 @@
       <header>
         <div class="hero-image">
           <div class="shape"></div>
-      <img src="/assets/illustration-hero-DeHi6J52.svg" alt="hero">
+      <img class="hero-img" style="margin: 0 auto;" src="/assets/illustration-hero-DeHi6J52.svg" alt="hero">
         </div>
       <div class="hero-content">
       <h1>A Simple Bookmark Manager</h1>
@@ -169,12 +171,49 @@
   </div><!--accordion end-->
 
   <button class="button faq__button" data-type="primary">More info</button>
-</section>
-
+</section> <!--faq end-->
 
 
   </main>
+</div><!--master-container end-->
 
+  <section class="contact">
+    <div class="contact__inner-content">
+    <p class="contact__top-text">35,000+ ALREADY JOINED</p>
+    <h2 class="contact__cta-text">Stay up-to-date with what
+      we’re doing</h2>
+      <!--EMAIL-->
+      <div id="form" class="form-control">
+        <label for="email"></label>
+        <div class="input-container">
+        <input class="email-field" type="email" placeholder="Enter your email address" id="email">
+        <svg class="i-error" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#FA5959"/><g fill="#FFF" transform="translate(9 5)"><rect width="2" height="7" rx="1"/><rect width="2" height="2" y="8" rx="1"/></g></g></svg>    
+        <div class="error-dropdown">
+          <small class="error-dropdown__message">Whoops, make sure it’s an email</small>
+        </div>
+      </div><!--input container end-->
+        <button data-type="red" type="submit" class="button contact-btn">Contact Us</button>
+
+      </div>
+      
+    </div><!--inner content end-->
+      </section>
+
+      <footer class="footer">
+        <div class="footer__left-content">
+          <img class="footer__logo" src="/assets/logo-footer-BG9GkkfR.svg" alt="white logo">
+          <ul class="nav-main">
+            <li class="nav-main__list-item"><a href="#" class="nav-main__list-link">Features</a></li>
+            <li class="nav-main__list-item"><a href="#" class="nav-main__list-link">Pricing</a></li>
+            <li class="nav-main__list-item"><a href="#" class="nav-main__list-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__right-content">
+          <img class="social-icon" src="/assets/icon-facebook-xfDE8V1g.svg" alt="facebook">
+          <img class="social-icon" src="/assets/icon-twitter-BxjW9OpA.svg" alt="twitter">
+        </div>
+      </footer>
+    
 
   </body>
 </html>

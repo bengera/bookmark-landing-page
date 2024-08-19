@@ -53,11 +53,20 @@
   margin-top: 3px;
   background-image: url("/images/logo-bookmark.svg");
   background-repeat: no-repeat;
+
+  @include mq(large) {
+    align-self: center;
+    margin-top: 0;
+  }
 }
 
 .logo.white {
   background-image: url("/images/logo-bookmark-white.svg");
   z-index: 40;
+
+  @include mq(large) {
+    background-image: url("/images/logo-bookmark.svg");
+  }
 }
 
 .buttons-container {

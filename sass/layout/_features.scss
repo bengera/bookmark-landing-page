@@ -12,12 +12,24 @@
     &__para {
       color: clr(primary, 100);
       margin-bottom: 40px;
+
+      @include mq(large) {
+        max-width: 540px;
+        margin: 0 auto;
+      }
     }
   
     &__list {
       display: flex;
       flex-direction: column;
       gap: 25px;
+
+      // @include mq(large) {
+      //   flex-direction: row;
+      //   gap: 134px;
+      //   justify-items: center;
+      //   align-self: center;
+      //     }
     }
   
     &__button {
