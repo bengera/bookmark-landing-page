@@ -10,10 +10,15 @@ hamMenu.addEventListener('click',() => {
     overlay.classList.toggle('show');
     logo.classList.toggle('white');
 
-    
-  
-    
-    
+    // if (hamMenu.classList.contains('active')) {
+    //     console.log('menu-open');
+    //     document.body.setAttribute("style", "position:fixed");
+
+    // } else {
+    //     overlay.setAttribute("style", "display:none");
+    //     document.body.setAttribute("style", "position:static");
+    // }
+         
 });
 
 // FEATURES CONTENT SWTICH
@@ -120,6 +125,10 @@ function isEmail(email) {
 
 function resetMenu() {
     console.log('reset menu');
+    overlay.classList.remove('show');
+    navDropDown.classList.remove('show');
+    logo.classList.remove('white');
+    hamMenu.classList.remove('active');
 }
 
 (function () {
