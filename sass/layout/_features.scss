@@ -13,10 +13,11 @@
       color: clr(primary, 100);
       margin-bottom: 40px;
 
-      @include mq(large) {
+      @include mq(small) {
         max-width: 540px;
-        margin: 0 auto;
-      }
+        margin: 0 auto 72px auto;
+       
+            }
     }
   
     &__list {
@@ -114,6 +115,8 @@
     &__para {
       color: clr(primary, 100);
       margin-bottom: 20px;
+
+    
     }
   }
   
