@@ -1,127 +1,162 @@
 @use "../abstracts/" as *;
 
 .features {
-    display: flex;
-    flex-direction: column;
-    gap: 23px;
-  
-    &__heading {
-      text-align: center;
-    }
-  
-    &__para {
-      color: clr(primary, 100);
-      margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
 
-      @include mq(small) {
-        max-width: 540px;
-        margin: 0 auto 72px auto;
-       
-            }
-    }
-  
-    &__list {
-      display: flex;
-      flex-direction: column;
-      gap: 25px;
-
-      @include mq(small) {
-        flex-direction: row;
-        justify-content: center;
-        border-bottom: 2px solid rgba(207, 204, 204, 0.5);
-        gap: 90px;
-        max-width: 755px;
-       padding: 0 1rem;
-        margin: 0 auto;
-          }
-    }
-  
-    &__button {
-      background-color: transparent;
-      border: 0;
-      box-shadow: 0px;
-      cursor: pointer;
-      color: clr(primary, 300);
-      border-bottom: 2px solid rgba($color: #cfcccc, $alpha: 0.5);
-      padding-bottom: 25px;
-
-      @include mq(small) {
-        border-bottom: 0;
-      }
-    }
-  
-    &__button {
-      position: relative;
-      color: clr(primary, 100);
-
-      @include mq(small) {
-        padding-bottom: 33px;
-            }
-      
-    }
-  
-    &__button.active {
-     color: clr(primary, 300);
-  
-      &::after {
-        content: "";
-        display: block;
-        height: 5px;
-        background-color: $color-red;
-        position: absolute;
-        bottom: 0;
-        width: 32%;
-        left: 34%;
-
-        @include mq(small) {
-          content: no-close-quote;
-          width: 130%;
-          left: -17%;
-        }
-      }
-    }
-  
-   
+  &__heading {
+    text-align: center;
   }
-  
 
-  button.features__button:nth-child(1) {
-    border-top: 2px solid rgba($color: #cfcccc, $alpha: 0.5);
-    padding-top: 25px;
+  &__para {
+    color: clr(primary, 100);
+    margin-bottom: 40px;
 
     @include mq(small) {
-      border-top: 0;
-      padding-top: 0;
-      }
-  }
-  
-  .left-content {
-    margin-top: 72px;
-    margin-bottom: 32px;
-  
-    &__img-container {
-      position: relative;
+      max-width: 540px;
+      margin: 0 auto 72px auto;
     }
   }
-  
-  .right-content {
-    text-align: center;
-  
-    &__heading {
-      padding-bottom: 0.6rem;
-      margin-top: 2rem;
-    }
-  
-    &__para {
-      color: clr(primary, 100);
-      margin-bottom: 20px;
 
-    
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    @include mq(small) {
+      flex-direction: row;
+      justify-content: center;
+      border-bottom: 2px solid rgba(207, 204, 204, 0.5);
+      gap: 90px;
+      max-width: 755px;
+      padding: 0 1rem;
+      margin: 0 auto;
     }
   }
+
+  &__button {
+    background-color: transparent;
+    border: 0;
+    box-shadow: 0px;
+    cursor: pointer;
+    color: clr(primary, 300);
+    border-bottom: 2px solid rgba($color: #cfcccc, $alpha: 0.5);
+    padding-bottom: 25px;
+
+    @include mq(small) {
+      border-bottom: 0;
+    }
+  }
+
+  &__button {
+    position: relative;
+    color: clr(primary, 100);
+
+    @include mq(small) {
+      padding-bottom: 33px;
+    }
+  }
+
+  &__button.active {
+    color: clr(primary, 300);
+
+    &::after {
+      content: "";
+      display: block;
+      height: 5px;
+      background-color: $color-red;
+      position: absolute;
+      bottom: 0;
+      width: 32%;
+      left: 34%;
+
+      @include mq(small) {
+        content: no-close-quote;
+        width: 130%;
+        left: -17%;
+      }
+    }
+  }
+}
+
+button.features__button:nth-child(1) {
+  border-top: 2px solid rgba($color: #cfcccc, $alpha: 0.5);
+  padding-top: 25px;
+
+  @include mq(small) {
+    border-top: 0;
+    padding-top: 0;
+  }
+}
+
+.tab-content {
+  @include mq(small) {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+
+    // border: 2px solid lime;
+  }
+}
+
+// .left-content,
+// .right-content {
+//   border: 2px solid red;
+
   
-  .shape.features-shape {
-    top: 30%;
-    left: -106px;
+// }
+
+.left-content {
+  margin-top: 72px;
+  margin-bottom: 32px;
+
+  @include mq(small) {
+    margin: 0;
   }
   
+
+  &__img-container {
+    position: relative;
+  }
+}
+
+.right-content {
+  text-align: center;
+
+  @include mq(small) {
+    text-align: left;
+              }
+
+  &__heading {
+    padding-bottom: 0.6rem;
+    margin-top: 4rem;
+  }
+
+  &__para {
+    color: clr(primary, 100);
+    margin-bottom: 20px;
+  }
+}
+
+.feature-img {
+  @include mq(small) {
+    max-width: 536px;
+              }
+}
+
+.shape.features-shape {
+  top: 95px;
+  width: 100vw;
+  height: 222px;
+  left: calc(100% - 100vw - 82px); 
+  border-radius: 65px;
+
+  @include mq(small) {
+    top: 190px;
+    height: 280px;
+    left: calc(100% - 100vw - 140px); 
+   
+  }
+}
+
