@@ -142,7 +142,9 @@ button.features__button:nth-child(1) {
 
 .feature-img {
   @include mq(small) {
-    max-width: 470px;
+    max-width: 440px;
+height: 380px;
+object-fit: cover;
               }
 }
 
