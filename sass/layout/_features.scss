@@ -93,7 +93,7 @@ button.features__button:nth-child(1) {
 .tab-content {
   @include mq(small) {
     display: flex;
-    gap: 1rem;
+    gap: 125px;
     padding: 1rem;
 
     // border: 2px solid lime;
@@ -118,6 +118,7 @@ button.features__button:nth-child(1) {
 
   &__img-container {
     position: relative;
+    margin: 0 auto;
   }
 }
 
@@ -146,17 +147,17 @@ button.features__button:nth-child(1) {
 }
 
 .shape.features-shape {
-  top: 95px;
+  
+  top: calc(100% - 190px);
   width: 100vw;
   height: 222px;
   left: calc(100% - 100vw - 82px); 
   border-radius: 65px;
 
   @include mq(small) {
-    top: 190px;
-    height: 280px;
-    left: calc(100% - 100vw - 140px); 
-   
+    top: calc(100% - 220px);
+    height: 297px;
+    
   }
 }
 
