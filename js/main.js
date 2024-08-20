@@ -10,15 +10,7 @@ hamMenu.addEventListener('click',() => {
     overlay.classList.toggle('show');
     logo.classList.toggle('white');
 
-    // if (hamMenu.classList.contains('active')) {
-    //     console.log('menu-open');
-    //     document.body.setAttribute("style", "position:fixed");
-
-    // } else {
-    //     overlay.setAttribute("style", "display:none");
-    //     document.body.setAttribute("style", "position:static");
-    // }
-         
+ 
 });
 
 // FEATURES CONTENT SWTICH
@@ -138,7 +130,7 @@ function resetMenu() {
     function displayWindowSize() {
         let myWidth = window.innerWidth;
 
-        if (myWidth >= 1000) {
+        if (myWidth >= 650) {
             if (hamMenu.classList.contains('active')) {
                 resetMenu();
             }
