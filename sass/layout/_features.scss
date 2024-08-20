@@ -29,7 +29,8 @@
         justify-content: center;
         border-bottom: 2px solid rgba(207, 204, 204, 0.5);
         gap: 90px;
-        max-width: 730px;
+        max-width: 755px;
+       padding: 0 1rem;
         margin: 0 auto;
           }
     }
@@ -52,6 +53,9 @@
       position: relative;
       color: clr(primary, 100);
 
+      @include mq(small) {
+        padding-bottom: 33px;
+            }
       
     }
   
@@ -64,13 +68,14 @@
         height: 5px;
         background-color: $color-red;
         position: absolute;
-        width: 50%;
-        left: 0;
         bottom: 0;
-        transform: translateX(50%);
+        width: 32%;
+        left: 34%;
 
         @include mq(small) {
           content: no-close-quote;
+          width: 130%;
+          left: -17%;
         }
       }
     }
