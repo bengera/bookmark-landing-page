@@ -22,7 +22,7 @@ tabs.forEach((tab) => {
                 heading.innerText = "Bookmark in one click";
                 text.innerText = 'Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.'
                 image.src = tab1;
-                // shape.style.height = "200px";
+                
                                 
                 break;
 

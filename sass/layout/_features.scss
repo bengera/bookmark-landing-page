@@ -148,6 +148,13 @@ object-fit: cover;
               }
 }
 
+.feature-img.first {
+  @include mq(small) {
+    object-fit: contain;
+    margin-right: -3rem;
+  }
+}
+
 .shape.features-shape {
   
   top: calc(100% - 190px);
