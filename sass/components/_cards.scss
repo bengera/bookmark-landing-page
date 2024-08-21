@@ -5,7 +5,7 @@
   gap: 2.5rem;
   padding: $card-body-padding;
 
-  @include mq(small) {
+  @include mq(medium) {
     
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -42,7 +42,7 @@
   // GRID POSITIONING////////////////////////////////////////////////
 
   .smol-card-component:first-child {
-    @include mq(small) {
+    @include mq(medium) {
       grid-row: 1/15;
      
      }
@@ -51,7 +51,7 @@
   }
 
   .smol-card-component:nth-child(2) {
-    @include mq(small) {
+    @include mq(medium) {
       grid-row: 3/17;
      
      }
@@ -60,7 +60,7 @@
   }
 
   .smol-card-component:nth-child(3) {
-    @include mq(small) {
+    @include mq(medium) {
       grid-row: 5/19;
       
      }

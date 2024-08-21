@@ -10,6 +10,14 @@ hamMenu.addEventListener('click',() => {
     overlay.classList.toggle('show');
     logo.classList.toggle('white');
 
+    if (hamMenu.classList.contains('active')) {
+        
+        document.body.setAttribute("style", "position:fixed");
+
+    } else {
+        // overlay.setAttribute("style", "display:none");
+        document.body.setAttribute("style", "position:static");
+    }
  
 });
 
