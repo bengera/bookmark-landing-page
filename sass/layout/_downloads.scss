@@ -12,6 +12,11 @@
     &__para {
       color: clr(primary, 100);
       margin-bottom: 20px;
+
+       @include mq(small) {
+         max-width: 540px;
+          align-self: center;
+}
     }
   }
   

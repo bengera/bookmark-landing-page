@@ -23,6 +23,7 @@ header {
 
   @include mq(medium) {
     display: grid;
+    padding-top: 80px;
     grid-template-columns: 520px 1fr;
     grid-template-rows: 1fr;
   }

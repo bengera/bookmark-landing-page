@@ -4,6 +4,17 @@
   display: grid;
   gap: 2.5rem;
   padding: $card-body-padding;
+
+  @include mq(small) {
+    
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(20, 25px);
+      grid-column-gap: 2rem;
+      grid-row-gap: 0px;
+      
+    
+  }
 }
 
 .smol-card-component {
@@ -27,11 +38,46 @@
     object-fit: cover;
     width: 100%;
   }
+
+  // GRID POSITIONING////////////////////////////////////////////////
+
+  .smol-card-component:first-child {
+    @include mq(small) {
+      grid-row: 1/15;
+     
+     }
+
+    
+  }
+
+  .smol-card-component:nth-child(2) {
+    @include mq(small) {
+      grid-row: 3/17;
+     
+     }
+
+    
+  }
+
+  .smol-card-component:nth-child(3) {
+    @include mq(small) {
+      grid-row: 5/19;
+      
+     }
+
+    
+  }
+
+  ////////////////////////////////////////////////////////////////////
+
   
   .smol-card-component > img:first-child {
     border-radius: 0.5rem 0.5rem 0 0;
+
+    
   }
-  
+
+ 
   .smol-card-component > img:last-child {
     border-radius: 0 0 0.5rem 0.5rem;
     margin-top: auto;

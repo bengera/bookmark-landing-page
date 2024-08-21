@@ -16,6 +16,7 @@
     @include mq(small) {
       max-width: 540px;
       margin: 0 auto 72px auto;
+   
     }
   }
 
@@ -96,16 +97,11 @@ button.features__button:nth-child(1) {
     gap: 125px;
     padding: 1rem;
 
-    // border: 2px solid lime;
+  
   }
 }
 
-// .left-content,
-// .right-content {
-//   border: 2px solid red;
 
-  
-// }
 
 .left-content {
   margin-top: 72px;
@@ -143,8 +139,8 @@ button.features__button:nth-child(1) {
 .feature-img {
   @include mq(small) {
     max-width: 440px;
-height: 380px;
-object-fit: cover;
+    height: 380px;
+    object-fit: cover;
               }
 }
 
