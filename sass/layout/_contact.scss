@@ -4,6 +4,13 @@
     background-color: clr(primary, 200);
     color: #fff;
     padding: 5rem 2rem;
+
+    
+ @include mq(small) {
+  height: 420px;
+  display: flex;
+
+ }
   
     &__inner-content {
       display: flex;
@@ -11,6 +18,12 @@
       align-items: center;
       gap: 1rem;
       text-align: center;
+
+      @include mq(small) {
+        max-width: 490px;
+        margin: 0 auto;
+        align-self: center;
+       }
       
     }
   
@@ -18,10 +31,19 @@
       font-size: 13px;
       letter-spacing: 5px;
       font-weight: $fw-500;
+
+      
+ @include mq(small) {
+  margin-bottom: 24px;
+    }
     }
   
     &__cta-text {
       font-size: 32px;
+
+      @include mq(small) {
+        margin-bottom: 26px;
+          }
     }
   }
   
@@ -32,6 +54,12 @@
   
   .contact-btn.active {
     margin-top: 1.2rem;
+    
+
+    @include mq(small) {
+      margin-top: 0;
+      
+    }
   }
   
   // Input Field
@@ -46,6 +74,10 @@
     align-items: center;
     gap: 1rem;
     position: relative;
+
+    @include mq(small) {
+     flex-direction: row;
+    }
   }
   
   .email-field {
@@ -60,11 +92,18 @@
     line-height: 40px;
     border-radius: 5px;
     z-index: 100;
+
+    
+ @include mq(small) {
+  width: 300px;
+  padding: 0.2em 1em;
+ }
   }
   
   .email-field.active {
     
     border: 3px solid $color-red;
+    
   }
   
   .i-error {
@@ -77,11 +116,16 @@
     right: 20px;
     top: 20px;
     z-index: 200;
+
+    @include mq(medium) {
+      top: 16px;
+        }
     
   }
   
   .error-dropdown{
     display: none;
+    
   }
   
   .error-dropdown.active {
@@ -91,7 +135,7 @@
     background-color: $color-red;
     padding: 0.2rem 0.5rem;
     border-radius: 5px;
-    bottom: -25px;
+    bottom: -27px;
     width: 100%;
     text-align: left;
     
