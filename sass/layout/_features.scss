@@ -92,13 +92,25 @@ button.features__button:nth-child(1) {
 }
 
 .tab-content {
-  @include mq(small) {
-    display: flex;
-    gap: 125px;
-    padding: 1rem;
 
   
+  @include mq(small) {
+    display: flex;
+    padding: 1rem;
+    gap: 5rem;
+  
   }
+ 
+
+ @include mq(medium) {
+  gap: 85px;
+ }
+
+ @include mq(large) {
+  
+  gap: 125px;
+ }
+  
 }
 
 

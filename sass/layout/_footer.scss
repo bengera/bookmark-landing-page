@@ -49,13 +49,7 @@
   
 }
 
-.footer {
 
-
-    
-    
-  }
-  
   .nav-main {
     // border: 2px solid red;
     display: flex;
@@ -68,10 +62,7 @@
       gap: 51px;
           }
   
-    &__list-item {
-      
-    }
-  
+     
     &__list-link {
       
       font-size: 15px;
@@ -82,7 +73,11 @@
       letter-spacing: 1.73px;
   
       &:hover {
-        color: $color-red;
+
+        @include mq(medium) {
+          color: $color-red;
+        }
+        
   
       }
     }

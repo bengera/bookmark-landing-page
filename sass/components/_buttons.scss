@@ -21,9 +21,14 @@
     border: 2px solid clr(primary, 200);
 
     &:hover {
-      color: clr(primary, 200);
-      background-color: #FFF;
-      box-shadow: 0 0 0 0;
+
+      @include mq(small) {
+        color: clr(primary, 200);
+        background-color: #FFF;
+        box-shadow: 0 0 0 0;
+        
+      }
+      
       
       
     }
@@ -41,8 +46,11 @@
     border: 2px solid $color-red;
 
     &:hover {
-      color: $color-red;
-      background-color: #FFF;
+      @include mq(small) {
+        color: $color-red;
+        background-color: #FFF;
+      }
+      
       
     }
   }

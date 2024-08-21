@@ -81,10 +81,14 @@
 }
 
 .button[data-type="accent"]:hover {
-  color: clr(primary, 300);
-  background-color: #fff;
-  box-shadow: 0 0 0 0;
-  border: 2px solid clr(primary, 300);
+
+  @include mq(small) {
+    color: clr(primary, 300);
+    background-color: #fff;
+    box-shadow: 0 0 0 0;
+    border: 2px solid clr(primary, 300);
+  }
+  
 }
 
 .shape {
@@ -98,12 +102,12 @@
   border-radius: 65px;
 
   @include mq(small) {
-    width: 100vw;
+    width: 120vw;
     height: 272px;
     left: -54px;
   }
 
-  @include mq(large) {
+  @include mq(small) {
     height: 326px;
     left: 173px;
     top: 121px;
