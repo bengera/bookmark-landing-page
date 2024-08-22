@@ -2,25 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/vite.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Bookmark-landing-page</title>
+    <meta name="description" content="Bookmark Manager is a clean and simple interface to organize your favorite websites. Sync bookmarks across devices and access them instantly.">
+    <meta name="keywords" content="bookmark manager, browser extension, organize websites, sync bookmarks, Chrome, Firefox, Opera, easy bookmarking">
+    <meta name="author" content="RedPenguinDev Inc.">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <title>Bookmark Manager - A Simple Bookmarking Solution</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index-DjV_VtU8.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/accordionJS-9VrGglyE.js">
-    <link rel="modulepreload" crossorigin href="/assets/mainJS-BNyOnsk8.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-BY_4mI0g.css">
-  </head>
+  <script type="module" crossorigin src="/assets/index-C6wLE1rY.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/accordionJS-9VrGglyE.js">
+  <link rel="modulepreload" crossorigin href="/assets/mainJS-B77UU1At.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-ukQ3el_m.css">
+
   <body>
    
     <div class="overlay"></div>
     <div class="master-container">
     <div class="nav">
      <div class="logo"></div>
-     <button class="hamburger-menu"></button>
+     <button class="hamburger-menu" aria-label="Open navigation menu"></button>
       <div class="nav__drop-down">
         <ul class="nav__list">
           <!-- <li class="nav__list-item"><a href="#" class="nav__list-link" style="visibility: hidden;">Features</a></li> -->
@@ -91,7 +93,7 @@
         <img class="card-content__img" src="/assets/logo-chrome-BeJ1U_wv.svg" alt="Chrome">
         <p class="card-content__title">Add to Chrome</p>
         <p class="card-content__version">Minimum version 62</p>
-        <button class="button card-content__button" data-type="primary">Add & Install Extension</button>
+        <button class="button card-content__button" data-type="primary" aria-label="Add & Install Extension for Chrome">Add & Install Extension</button>
       </div>
     </div>
 
@@ -101,7 +103,7 @@
         <img class="card-content__img" src="/assets/logo-firefox-cIkpGRhX.svg" alt="Firefox">
         <p class="card-content__title">Add to Firefox</p>
         <p class="card-content__version">Minimum version 55</p>
-        <button class="button card-content__button" data-type="primary">Add & Install Extension</button>
+        <button class="button card-content__button" data-type="primary" aria-label="Add & Install Extension for Firefox">Add & Install Extension</button>
       </div>
     </div>
 
@@ -111,7 +113,7 @@
         <img class="card-content__img" src="/assets/logo-opera-BaMos60z.svg" alt="Opera">
         <p class="card-content__title">Add to Opera</p>
         <p class="card-content__version">Minimum version 46</p>
-        <button class="button card-content__button" data-type="primary">Add & Install Extension</button>
+        <button class="button card-content__button" data-type="primary" aria-label="Add & Install Extension for Opera">Add & Install Extension</button>
       </div>
     </div>
 
@@ -199,20 +201,22 @@
       
     </div><!--inner content end-->
       </section>
-
+      
       <footer class="footer">
-        <div class="footer__left-content">
-          <img class="footer__logo" src="/assets/logo-footer-BG9GkkfR.svg" alt="white logo">
+        <div class="footer-inner-content">
+        <div class="footer-inner-content__left-content">
+          <img class="footer-inner-content__logo" src="/assets/logo-footer-BG9GkkfR.svg" alt="white logo">
           <ul class="nav-main">
             <li class="nav-main__list-item"><a href="#" class="nav-main__list-link">Features</a></li>
             <li class="nav-main__list-item"><a href="#" class="nav-main__list-link">Pricing</a></li>
             <li class="nav-main__list-item"><a href="#" class="nav-main__list-link">Contact</a></li>
           </ul>
         </div>
-        <div class="footer__right-content">
-          <img class="social-icon" src="/assets/icon-facebook-xfDE8V1g.svg" alt="facebook">
-          <img class="social-icon" src="/assets/icon-twitter-BxjW9OpA.svg" alt="twitter">
+        <div class="footer-inner-content__right-content">
+          <img class="social-icon" src="/assets/icon-facebook-xfDE8V1g.svg" alt="facebook" aria-label="Visit our Facebook page">
+          <img class="social-icon" src="/assets/icon-twitter-BxjW9OpA.svg" alt="twitter" aria-label="Visit our Twitter page">
         </div>
+      </div><!--footer content end-->
       </footer>
     
 
