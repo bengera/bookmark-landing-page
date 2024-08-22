@@ -13,10 +13,12 @@ hamMenu.addEventListener('click',() => {
     if (hamMenu.classList.contains('active')) {
         
         document.body.setAttribute("style", "position:fixed");
+        hamMenu.setAttribute('aria-label', 'Close navigation menu');
 
     } else {
-        // overlay.setAttribute("style", "display:none");
+        
         document.body.setAttribute("style", "position:static");
+        hamMenu.setAttribute('aria-label', 'Open navigation menu');
     }
  
 });
