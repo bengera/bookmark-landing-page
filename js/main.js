@@ -31,6 +31,7 @@ function resetMenu() {
     navDropDown.classList.remove('show');
     logo.classList.remove('white');
     hamMenu.classList.remove('active');
+    document.body.setAttribute("style", "position:static");
 }
 
 (function () {
