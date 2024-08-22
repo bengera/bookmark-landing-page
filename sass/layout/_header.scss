@@ -101,14 +101,9 @@
   left: 80px;
   border-radius: 65px;
 
-  @include mq(small) {
+   @include mq(small) {
     width: 120vw;
-    height: 272px;
-    left: -54px;
-  }
-
-  @include mq(small) {
-    height: 326px;
+    height: 356px;
     left: 173px;
     top: 121px;
     border-radius: 178px;

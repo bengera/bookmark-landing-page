@@ -138,13 +138,13 @@ button.features__button:nth-child(1) {
               }
 
   &__heading {
-    padding-bottom: 0.6rem;
+    padding-bottom: 16px;
     margin-top: 4rem;
   }
 
   &__para {
     color: clr(primary, 100);
-    margin-bottom: 20px;
+    margin-bottom: 32px;
   }
 }
 
@@ -169,7 +169,7 @@ button.features__button:nth-child(1) {
   width: 100vw;
   height: 222px;
   left: calc(100% - 100vw - 82px); 
-  border-radius: 65px;
+  border-radius: 178px;
 
   @include mq(small) {
     top: calc(100% - 220px);

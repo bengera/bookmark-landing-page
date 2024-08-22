@@ -32,7 +32,7 @@
   margin: 0.3rem auto 2rem auto;
   max-width: 420px;
   @include mq(small) {
-    width: 60%;
+    max-width: 540px;
   }
  
   &__item {
