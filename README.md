@@ -1,6 +1,6 @@
 # Frontend Mentor - Bookmark landing page
 
-This is a solution to the [Officelite website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Bookmark landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Overview
 I enjoyed this challenge, there were certainly some challenging aspects to the layout, particulary with the 'downloads' section transitioning from mobile to desktop with CSS grids.
@@ -52,3 +52,9 @@ While trying to make my site more accessible to people with screen readers I dis
 using the tab key does not focus on some of the social icons in the navigation and footer. Additionally, when the mobile navigation menu is open, users can tab out of it and access other elements on the site. While researching this I came across something called 'Focus trapping'.Focus trapping is a technique used to keep the focus within a specific area, such as a modal or overlay. 
 
 I have labeled my buttons and other interactive elements of my websites but I have found that the topic of accessibility to be quite deep and I will look into it more in my next challenge. For now I have just added the basic accessibility and tested it with a screen reader.
+
+### More about accessibility
+
+- [Accesible Web Dev](https://accessibleweb.dev/)
+- [Focus Trapping](https://medium.com/@im_rahul/focus-trapping-looping-b3ee658e5177)
+
