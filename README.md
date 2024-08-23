@@ -16,7 +16,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Site](screenshot.PNG)
+![](./screenshot.png)
 
 ### Links
 
